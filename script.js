@@ -301,10 +301,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ===== EASTER EGG: KONAMI CODE =====
 let konamiCode = [];
-const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+let konamiStyleAdded = false;
 
 document.addEventListener('keydown', (e) => {
-    konamiCode.push(e.key);
+    konamiCode.push(e.code);
     konamiCode = konamiCode.slice(-10);
     
     if (konamiCode.join('') === konamiSequence.join('')) {
@@ -312,11 +313,25 @@ document.addEventListener('keydown', (e) => {
         document.body.style.animation = 'glitch-anim 2s';
         console.log('%c 🎮 KONAMI CODE ACTIVATED! SYSTEM OVERLOAD! ', 'background: #a855f7; color: #fff; font-size: 16px; font-weight: bold; padding: 10px;');
         
+        // Add fall animation style only once
+        if (!konamiStyleAdded) {
+            const fallStyle = document.createElement('style');
+            fallStyle.id = 'konami-style';
+            fallStyle.textContent = `
+                @keyframes fall {
+                    to { transform: translateY(100vh); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(fallStyle);
+            konamiStyleAdded = true;
+        }
+        
         // Create matrix effect
         for (let i = 0; i < 50; i++) {
             setTimeout(() => {
                 const particle = document.createElement('div');
                 particle.textContent = Math.random() > 0.5 ? '1' : '0';
+                const animDuration = 3 + Math.random() * 3;
                 particle.style.cssText = `
                     position: fixed;
                     left: ${Math.random() * 100}%;
@@ -325,21 +340,14 @@ document.addEventListener('keydown', (e) => {
                     font-family: var(--font-mono);
                     font-size: 20px;
                     z-index: 9999;
-                    animation: fall ${3 + Math.random() * 3}s linear;
+                    animation: fall ${animDuration}s linear;
                     pointer-events: none;
                 `;
                 document.body.appendChild(particle);
                 
-                setTimeout(() => particle.remove(), 6000);
+                // Remove particle when animation completes
+                setTimeout(() => particle.remove(), animDuration * 1000);
             }, i * 100);
         }
-        
-        const fallStyle = document.createElement('style');
-        fallStyle.textContent = `
-            @keyframes fall {
-                to { transform: translateY(100vh); opacity: 0; }
-            }
-        `;
-        document.head.appendChild(fallStyle);
     }
 });

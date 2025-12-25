@@ -44,10 +44,10 @@ const animateCounter = (element) => {
     const updateCounter = () => {
         current += increment;
         if (current < target) {
-            element.textContent = Math.floor(current) + (target === 24 ? '/7' : '+');
+            element.textContent = Math.floor(current);
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = target + (target === 24 ? '/7' : '+');
+            element.textContent = target;
         }
     };
     

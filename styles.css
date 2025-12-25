@@ -286,8 +286,18 @@ body {
 .hero-subtitle {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     letter-spacing: 1px;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-stats {
@@ -748,6 +758,61 @@ body {
     font-size: 0.85rem;
     color: var(--text-secondary);
 }
+
+/* ===== CERTIFICATIONS SECTION ===== */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.cert-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cert-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* ===== VISION SECTION ===== */
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.vision-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.vision-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.vision-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
 
 /* ===== CONTACT SECTION ===== */
 .contact-container {

@@ -32,7 +32,7 @@ Third-semester Forensic Science student at K.R. Mangalam University (2024–2027
 
 ### Projects Featured
 - **n8n** - Workflow automation
-- **React. js** - Frontend framework
+- **React.js** - Frontend framework
 - **Tailwind CSS** - Utility-first CSS
 - **Recharts** - Data visualization
 - **Python** - Automation & AI
@@ -86,73 +86,95 @@ portfolio/
 3. **View at** `http://localhost:8000`
 
 ## 📊 Sections Overview
-[01] About
+
+### [01] About
 Forensic Science student background, internship experience, and technical interests.
 
-[02] Expertise
-Agentic AI & n8n Workflow Development (85%)
-Cyber Forensics & OSINT (80%)
-Fingerprint & Identity Analysis (75%)
-Blockchain Fundamentals (70%)
-Web Development (82%)
-[03] Experience
-Forensic Science Intern - State Forensic Science Lab, CID Patna (June-July 2025)
-Blockchain & Crypto Intern - Future Interns (July 2025-Present)
-[04] Projects
-n8n Email Security & Scam Protector - Outlook + Gmail protection
-Crypto Portfolio Tracker - Real-time crypto portfolio management
-Agentic AI Automation Systems - Forensic intelligence workflows
-[05] Certifications
-Digital Forensics: Trends and Technology
-Cyber Forensics: Security & Penetration Testing
-Bug Bounty and Cyber Crime Investigation Workshop
-FUSE 1.0
-[06] Vision
-Autonomous forensic investigation workflows
-AI-driven cyber intelligence systems
-Blockchain-based evidence integrity
-[07] Contact
-📧 rajgulshan2580@gmail.com
-💼 LinkedIn
-🔗 GitHub
-📍 Gurugram, Haryana, India
-🎯 Key Highlights
-🎓 Third-semester Forensic Science student
-🔬 Hands-on experience at State Forensic Science Lab, CID Patna
-🤖 Building AI-driven automation systems with n8n
-⛓️ Exploring blockchain for forensic applications
-💻 Full-stack development skills
-🌐 Browser Support
-Chrome (recommended)
-Firefox
-Safari
-Edge
-📱 Responsive Design
+### [02] Expertise
+- Agentic AI & n8n Workflow Development (85%)
+- Cyber Forensics & OSINT (80%)
+- Fingerprint & Identity Analysis (75%)
+- Blockchain Fundamentals (70%)
+- Web Development (82%)
+
+### [03] Experience
+- **Forensic Science Intern** - State Forensic Science Lab, CID Patna (June-July 2025)
+- **Blockchain & Crypto Intern** - Future Interns (July 2025-Present)
+
+### [04] Projects
+- **n8n Email Security & Scam Protector** - Outlook + Gmail protection
+- **Crypto Portfolio Tracker** - Real-time crypto portfolio management
+- **Agentic AI Automation Systems** - Forensic intelligence workflows
+
+### [05] Certifications
+- Digital Forensics: Trends and Technology
+- Cyber Forensics: Security & Penetration Testing
+- Bug Bounty and Cyber Crime Investigation Workshop
+- FUSE 1.0
+
+### [06] Vision
+- Autonomous forensic investigation workflows
+- AI-driven cyber intelligence systems
+- Blockchain-based evidence integrity
+
+### [07] Contact
+- 📧 rajgulshan2580@gmail.com
+- 💼 LinkedIn
+- 🔗 GitHub
+- 📍 Gurugram, Haryana, India
+
+## 🎯 Key Highlights
+
+- 🎓 Third-semester Forensic Science student
+- 🔬 Hands-on experience at State Forensic Science Lab, CID Patna
+- 🤖 Building AI-driven automation systems with n8n
+- ⛓️ Exploring blockchain for forensic applications
+- 💻 Full-stack development skills
+
+## 🌐 Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## 📱 Responsive Design
+
 Fully responsive with breakpoints at:
 
-Desktop: 1024px+
-Tablet: 768px - 1023px
-Mobile: < 768px
-⚡ Performance
-No external dependencies
-Lightweight vanilla JavaScript
-Optimized CSS animations
-Fast loading time
-🎨 Color Palette
-Primary Background: #0a0a0f
-Accent Cyan: #00f0ff
-Accent Purple: #a855f7
-Accent Green: #00ff88
-📄 License
+- **Desktop**: 1024px+
+- **Tablet**: 768px - 1023px
+- **Mobile**: < 768px
+
+## ⚡ Performance
+
+- No external dependencies
+- Lightweight vanilla JavaScript
+- Optimized CSS animations
+- Fast loading time
+
+## 🎨 Color Palette
+
+- **Primary Background**: #0a0a0f
+- **Accent Cyan**: #00f0ff
+- **Accent Purple**: #a855f7
+- **Accent Green**: #00ff88
+
+## 📄 License
+
 © 2025 Gulshan Kumar. All rights reserved.
 
-🤝 Connect
+## 🤝 Connect
+
 Feel free to reach out for collaborations on:
 
-Forensic science projects
-AI automation systems
-Blockchain applications
-Cyber intelligence research
+- Forensic science projects
+- AI automation systems
+- Blockchain applications
+- Cyber intelligence research
+
+---
+
 Built with ❤️ by Gulshan Kumar
 
 **FORNEXT - Cyber-Intelligence Excellence**

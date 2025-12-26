@@ -60,31 +60,6 @@ portfolio/
 - **Card Tilt**:  3D tilt effect on hover
 - **Easter Egg**:  Konami code activation
 
-## 🔧 Setup & Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/0xsherlocks/portfolio.git
-   cd portfolio
-   ```
-
-2. **Open in browser**
-   ```bash
-   # Simply open index.html in your browser
-   open index.html
-   ```
-
-   Or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-
-   # Using Node.js http-server
-   npx http-server
-   ```
-
-3. **View at** `http://localhost:8000`
-
 ## 📊 Sections Overview
 
 ### [01] About

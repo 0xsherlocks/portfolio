@@ -906,6 +906,14 @@ body {
     box-shadow: 0 5px 30px var(--glow-cyan);
 }
 
+.form-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: -0.5rem;
+    font-style: italic;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     padding: 3rem 2rem;

@@ -442,7 +442,8 @@
                     </div>
                 </div>
                 <div class="contact-form glass-panel">
-                    <form class="secure-form">
+                    <form name="contact" method="POST" data-netlify="true" class="secure-form">
+                        <input type="hidden" name="form-name" value="contact">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -459,7 +460,8 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
                         </div>
-                        <button type="submit" class="submit-button">Send Encrypted Message</button>
+                        <button type="submit" class="submit-button">Send Secure Message</button>
+                        <p class="form-note">Messages are transmitted securely via HTTPS.</p>
                     </form>
                 </div>
             </div>

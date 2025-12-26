@@ -136,38 +136,8 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== FORM SUBMISSION =====
-const contactForm = document.querySelector('.secure-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Simulate form submission
-    const submitButton = contactForm.querySelector('.submit-button');
-    submitButton.textContent = 'Encrypting & Sending...';
-    submitButton.style.background = 'var(--accent-purple)';
-    
-    setTimeout(() => {
-        submitButton.textContent = 'Message Sent Successfully!';
-        submitButton.style.background = 'var(--accent-green)';
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Reset button after 3 seconds
-        setTimeout(() => {
-            submitButton.textContent = 'Send Encrypted Message';
-            submitButton.style.background = 'var(--accent-cyan)';
-        }, 3000);
-    }, 1500);
-});
+// Form is handled by Netlify Forms (method="POST", data-netlify="true")
+// No custom JavaScript needed - Netlify handles the submission
 
 // ===== PARTICLES GENERATION =====
 const createParticles = () => {

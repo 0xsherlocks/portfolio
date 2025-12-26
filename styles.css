@@ -874,6 +874,43 @@ body {
     margin-top: 0.5rem;
 }
 
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-cyan);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--accent-cyan);
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+.footer-separator {
+    color: var(--glass-border);
+}
+
 .footer-copyright p {
     color: var(--text-secondary);
     font-size: 0.9rem;
@@ -960,6 +997,10 @@ body {
         flex-direction: column;
         gap: 2rem;
         text-align: center;
+    }
+    
+    .footer-links {
+        order: -1;
     }
 }
 

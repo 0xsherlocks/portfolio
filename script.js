@@ -44,10 +44,10 @@ const animateCounter = (element) => {
     const updateCounter = () => {
         current += increment;
         if (current < target) {
-            element.textContent = Math.floor(current);
+            element.textContent = Math.floor(current) + '+';
             requestAnimationFrame(updateCounter);
         } else {
-            element.textContent = target;
+            element.textContent = target + '+';
         }
     };
     

@@ -82,10 +82,13 @@ Forensic Science student background, internship experience, and technical intere
 - **Agentic AI Automation Systems** - Forensic intelligence workflows
 
 ### [05] Certifications
-- Digital Forensics: Trends and Technology
-- Cyber Forensics: Security & Penetration Testing
-- Bug Bounty and Cyber Crime Investigation Workshop
-- FUSE 1.0
+- Digital Forensics: Awareness on Trends and Technology - K.R. Mangalam University
+- Cyber Forensics: Cyber Security & Penetration Testing - Alpha Probe Forensic (Jun 2025)
+- Bug Bounty and Cyber Crime Investigation Workshop - Indian Cyber Club
+- FUSE 1.0: Forensic Science Workshop - K.R. Mangalam University (Sep 2024)
+- Blockchain & Cryptocurrency Internship - Future Interns (Jul 2025)
+- FSL Internship: Forensic Science Laboratory Training - FSL Patna (Jun-Jul 2025)
+- AMGSE-2025: Green Chemistry & Sustainable Environment - K.R. Mangalam University
 
 ### [06] Vision
 - Autonomous forensic investigation workflows

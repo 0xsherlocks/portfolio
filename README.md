@@ -109,13 +109,6 @@ Forensic Science student background, internship experience, and technical intere
 - ⛓️ Exploring blockchain for forensic applications
 - 💻 Full-stack development skills
 
-## 🌐 Browser Support
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
 ## 📱 Responsive Design
 
 Fully responsive with breakpoints at:

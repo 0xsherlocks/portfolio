@@ -1,105 +1,95 @@
 # 🔬 Gulshan Kumar - Portfolio
 
-> Forensic Science × Agentic AI × Cyber Intelligence
+> Forensic Science × AI-Driven Cyber Intelligence
 
-A futuristic portfolio website showcasing the intersection of forensic science, AI automation, and cyber intelligence. 
+A modern, futuristic portfolio website built with **Next.js** and **React**, showcasing the intersection of forensic science, AI automation, and cyber intelligence. Features a **Spline 3D** animated robot character in the hero section.
 
-## 🌟 About
+## 🌟 Features
 
-Third-semester Forensic Science student at K.R. Mangalam University (2024–2027) with hands-on experience in digital forensics, AI-driven automation systems using n8n, and blockchain fundamentals. 
+- **Next.js 16** - React framework with server-side rendering
+- **Spline 3D Integration** - Interactive 3D robot character
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling with custom cyber theme
+- **Responsive Design** - Mobile-first approach with smooth transitions
+- **SEO Optimized** - Comprehensive meta tags for search engines and social media
+- **Glassmorphism UI** - Modern frosted glass effects
+- **Gradient Text Effects** - Cyber-themed color schemes
 
-## 🚀 Features
+## 🚀 Getting Started
 
-- **Futuristic Design**:  Glassmorphism effects, HUD interface, glitch animations
-- **Interactive Elements**: Custom cursor, 3D card tilts, parallax scrolling
-- **Responsive**:  Mobile-friendly design with smooth transitions
-- **Sections**:
-  - Hero with dynamic stats
-  - About with terminal-style status
-  - 5 Core Expertise areas
-  - Real internship experience
-  - Active projects showcase
-  - Certifications display
-  - Vision & goals
-  - Contact form
+### Prerequisites
 
-## 🛠️ Tech Stack
+- Node.js 18.x or higher
+- npm or yarn
 
-### Frontend
-- HTML5
-- CSS3 (Glassmorphism, Animations)
-- Vanilla JavaScript
+### Installation
 
-### Projects Featured
-- **n8n** - Workflow automation
-- **React.js** - Frontend framework
-- **Tailwind CSS** - Utility-first CSS
-- **Recharts** - Data visualization
-- **Python** - Automation & AI
-- **Gmail/Outlook API** - Email security
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📂 Project Structure
 
 ```
 portfolio/
-├── index.html   # Main HTML file
-├── styles.css   # All styling
-├── script.js    # Interactive features
-└── README.md    # This file
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout with SEO meta tags
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles with Tailwind
+├── components/            # React components
+│   ├── Hero.tsx           # Hero section with Spline 3D
+│   ├── Navigation.tsx     # Top navigation bar
+│   └── CallToAction.tsx   # CTA section
+├── public/                # Static assets
+├── .backup/               # Backup of original HTML files
+├── next.config.js         # Next.js configuration
+├── tailwind.config.js     # Tailwind configuration
+└── tsconfig.json          # TypeScript configuration
 ```
 
 ## 🎨 Design Features
 
-- **Custom Cursor**: Glowing cyan cursor with hover effects
-- **3D Grid Background**: Animated perspective grid
-- **Glitch Effects**: Text glitch animations
-- **Glass Panels**: Frosted glass effect on cards
-- **Particle System**: Animated particles in hero section
+- **Custom Cursor**: Glowing cyan cursor with hover effects (desktop)
+- **3D Spline Animation**: Interactive robot character on hero
+- **Gradient Text**: Animated gradient effects on titles
+- **Glass Panels**: Frosted glass effect on cards with hover transitions
 - **Smooth Scrolling**: Section-based navigation
-- **Counter Animations**: Animated statistics
-- **Card Tilt**:  3D tilt effect on hover
-- **Easter Egg**:  Konami code activation
+- **Dark Cyber Theme**: Dark background with cyan/purple/green accents
 
-## 📊 Sections Overview
+## 🛠️ Tech Stack
 
-### [01] About
-Forensic Science student background, internship experience, and technical interests.
+### Frontend
+- **Next.js 16** - React framework
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS 4** - Styling
+- **Spline React** - 3D animations
 
-### [02] Expertise
-- Agentic AI & n8n Workflow Development (85%)
-- Cyber Forensics & OSINT (80%)
-- Fingerprint & Identity Analysis (75%)
-- Blockchain Fundamentals (70%)
-- Web Development (82%)
+### Tools
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixing
 
-### [03] Experience
-- **Forensic Science Intern** - State Forensic Science Lab, CID Patna (June-July 2025)
-- **Blockchain & Crypto Intern** - Future Interns (July 2025-Present)
+## 📊 Sections
 
-### [04] Projects
-- **n8n Email Security & Scam Protector** - Outlook + Gmail protection
-- **Crypto Portfolio Tracker** - Real-time crypto portfolio management
-- **Agentic AI Automation Systems** - Forensic intelligence workflows
-
-### [05] Certifications
-- Digital Forensics: Awareness on Trends and Technology - K.R. Mangalam University
-- Cyber Forensics: Cyber Security & Penetration Testing - Alpha Probe Forensic (Jun 2025)
-- Bug Bounty and Cyber Crime Investigation Workshop - Indian Cyber Club
-- FUSE 1.0: Forensic Science Workshop - K.R. Mangalam University (Sep 2024)
-- Blockchain & Cryptocurrency Internship - Future Interns (Jul 2025)
-- FSL Internship: Forensic Science Laboratory Training - FSL Patna (Jun-Jul 2025)
-- AMGSE-2025: Green Chemistry & Sustainable Environment - K.R. Mangalam University
-
-### [06] Vision
-- Autonomous forensic investigation workflows
-- AI-driven cyber intelligence systems
-- Blockchain-based evidence integrity
-
-### [07] Contact
-- 📧 rajgulshan2580@gmail.com
-- 💼 LinkedIn
-- 🔗 GitHub
-- 📍 Gurugram, Haryana, India
+1. **[01] About** - Forensic Science student background and expertise
+2. **[02] Expertise** - Core skills in AI, forensics, and blockchain
+3. **[03] Experience** - Internship experiences and achievements
+4. **[04] Projects** - Active projects with problem-solution format
+5. **[05] Certifications** - Professional certifications
+6. **[06] Vision** - Future goals and what's being built
+7. **[07] Contact** - Contact form and information
 
 ## 🎯 Key Highlights
 
@@ -109,27 +99,25 @@ Forensic Science student background, internship experience, and technical intere
 - ⛓️ Exploring blockchain for forensic applications
 - 💻 Full-stack development skills
 
-## 📱 Responsive Design
+## 📱 Responsive Breakpoints
 
-Fully responsive with breakpoints at:
-
-- **Desktop**: 1024px+
-- **Tablet**: 768px - 1023px
 - **Mobile**: < 768px
+- **Tablet**: 768px - 1023px
+- **Desktop**: 1024px+
 
-## ⚡ Performance
+## 🌐 Deployment
 
-- No external dependencies
-- Lightweight vanilla JavaScript
-- Optimized CSS animations
-- Fast loading time
+The portfolio is optimized for deployment on:
 
-## 🎨 Color Palette
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **GitHub Pages** (requires static export)
 
-- **Primary Background**: #0a0a0f
-- **Accent Cyan**: #00f0ff
-- **Accent Purple**: #a855f7
-- **Accent Green**: #00ff88
+For Vercel deployment:
+```bash
+npm run build
+vercel deploy
+```
 
 ## 📄 License
 
@@ -137,15 +125,13 @@ Fully responsive with breakpoints at:
 
 ## 🤝 Connect
 
-Feel free to reach out for collaborations on:
-
-- Forensic science projects
-- AI automation systems
-- Blockchain applications
-- Cyber intelligence research
+- 📧 rajgulshan2580@gmail.com
+- 💼 [LinkedIn](https://linkedin.com/in/gulshanxraj)
+- 🔗 [GitHub](https://github.com/0xsherlocks)
+- 📍 Gurugram, Haryana, India
 
 ---
 
-Built with ❤️ by Gulshan Kumar
-
 **FORNEXT - Cyber-Intelligence Excellence**
+
+Built with ❤️ by Gulshan Kumar

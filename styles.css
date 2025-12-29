@@ -918,6 +918,47 @@ body {
 }
 
 /* ===== CONTACT SECTION ===== */
+.cta-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.05), rgba(168, 85, 247, 0.05));
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== CONTACT SECTION ===== */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1095,12 +1136,24 @@ body {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
+    .section-container {
+        padding: 4rem 2rem;
+    }
+    
+    .hero-section {
+        padding: 6rem 2rem 4rem;
+    }
+    
     .hero-title {
         font-size: 3rem;
     }
     
     .title-line:nth-child(2) {
         font-size: 3.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
     }
     
     .about-grid,
@@ -1110,6 +1163,14 @@ body {
     
     .nav-links {
         gap: 1rem;
+    }
+    
+    .cta-title {
+        font-size: 2.5rem;
+    }
+    
+    .cta-text {
+        font-size: 1.1rem;
     }
 }
 
@@ -1127,6 +1188,14 @@ body {
         cursor: pointer;
     }
     
+    .section-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero-section {
+        padding: 5rem 1.5rem 3rem;
+    }
+    
     .nav-links {
         display: none;
     }
@@ -1137,6 +1206,15 @@ body {
     
     .title-line:nth-child(2) {
         font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
     }
     
     .hero-stats {
@@ -1150,6 +1228,10 @@ body {
     
     .section-title {
         font-size: 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2.5rem;
     }
     
     .expertise-grid,
@@ -1186,6 +1268,37 @@ body {
         padding-left: 2rem;
     }
     
+    .cta-section {
+        padding: 4rem 1.5rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-text {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-heading {
+        font-size: 1.5rem;
+    }
+    
+    .contact-text {
+        font-size: 0.95rem;
+    }
+    
     .footer-content {
         flex-direction: column;
         gap: 2rem;
@@ -1194,6 +1307,10 @@ body {
     
     .footer-links {
         order: -1;
+    }
+    
+    .glass-panel {
+        padding: 1.5rem;
     }
 }
 

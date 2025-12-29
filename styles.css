@@ -76,9 +76,9 @@ body {
     font-weight: 700;
     letter-spacing: 3px;
     background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .nav-links {
@@ -277,9 +277,9 @@ body {
 
 .title-line:nth-child(2) {
     background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple), var(--accent-green));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-size: 5rem;
 }
 

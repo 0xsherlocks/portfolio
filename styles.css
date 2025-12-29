@@ -735,7 +735,6 @@ body {
 }
 
 .project-thumbnail {
-    width: 100%;
     height: 180px;
     margin: -2rem -2rem 1.5rem -2rem;
     width: calc(100% + 4rem);
@@ -900,6 +899,18 @@ body {
     background: var(--accent-purple);
     color: var(--primary-bg);
     box-shadow: 0 5px 20px var(--glow-purple);
+}
+
+.project-link.coming-soon {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.project-link.coming-soon:hover {
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--accent-purple);
+    transform: none;
+    box-shadow: none;
 }
 
 .link-icon {

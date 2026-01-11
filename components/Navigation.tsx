@@ -2,14 +2,8 @@
 
 import { useState, useEffect } from 'react'
 
-type NavigationProps = {
-  theme: 'light' | 'dark'
-  onToggleTheme: () => void
-}
-
-export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
+export default function Navigation() {
   const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,59 +21,42 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
     { href: '#projects', label: 'Projects' },
     { href: '#certifications', label: 'Certifications' },
     { href: '#vision', label: 'Vision' },
-    { href: '#blog', label: 'Articles' },
-    { href: '#testimonials', label: 'Testimonials' },
     { href: '#contact', label: 'Contact' },
   ]
 
   return (
     <nav
-      className={`nav-hud ${scrolled ? 'nav-hud-scrolled' : ''} ${menuOpen ? 'nav-hud-open' : ''}`}
-      aria-label="Primary"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-primary-bg/80 backdrop-blur-lg border-b border-glass-border' : 'bg-transparent'
+      }`}
     >
-      <div className="nav-container">
-        <div className="brand">
-          <span className="brand-text glitch" data-text="FORNEXT">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16">
+        <div className="flex justify-between items-center py-4">
+          {/* Brand */}
+          <div className="text-2xl font-bold tracking-widest gradient-text">
             FORNEXT
-          </span>
-          <div className="availability-pill" aria-live="polite">
-            <span className="status-dot" aria-hidden="true" /> Available for missions
           </div>
-        </div>
 
-        <ul className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`} role="menubar">
-          {navLinks.map((link) => (
-            <li key={link.href} role="none">
-              <a
-                href={link.href}
-                className="nav-link"
-                role="menuitem"
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          {/* Desktop Navigation */}
+          <ul className="hidden lg:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm text-text-secondary hover:text-accent-cyan uppercase tracking-wide transition-colors duration-200 relative group"
+                >
+                  {link.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-cyan group-hover:w-full transition-all duration-300"></span>
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <div className="nav-actions">
-          <button
-            id="theme-toggle"
-            aria-label="Toggle theme"
-            className="theme-toggle"
-            onClick={onToggleTheme}
-          >
-            <span className="theme-icon">{theme === 'dark' ? '☀️' : '🌙'}</span>
-            <span className="theme-label">{theme === 'dark' ? 'Light' : 'Dark'} Mode</span>
-          </button>
-          <button
-            className={`mobile-trigger ${menuOpen ? 'open' : ''}`}
-            aria-label="Toggle navigation menu"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            <span />
-            <span />
-            <span />
+          {/* Mobile menu button */}
+          <button className="lg:hidden p-2 text-text-secondary hover:text-accent-cyan">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
       </div>

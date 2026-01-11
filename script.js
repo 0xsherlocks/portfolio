@@ -1,40 +1,35 @@
 // ===== CUSTOM CURSOR =====
 const cursor = document.querySelector('.cursor-glow');
 
-if (cursor) {
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
 
-    // Cursor hover effects
-    const hoverElements = document.querySelectorAll('a, button, .glass-panel');
-    hoverElements.forEach(element => {
-        element.addEventListener('mouseenter', () => {
-            cursor.style.transform = 'scale(1.5)';
-            cursor.style.borderColor = 'var(--accent-purple)';
-        });
-        
-        element.addEventListener('mouseleave', () => {
-            cursor.style.transform = 'scale(1)';
-            cursor.style.borderColor = 'var(--accent-cyan)';
-        });
+// Cursor hover effects
+const hoverElements = document.querySelectorAll('a, button, .glass-panel');
+hoverElements.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(1.5)';
+        cursor.style.borderColor = 'var(--accent-purple)';
     });
-}
+    
+    element.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+        cursor.style.borderColor = 'var(--accent-cyan)';
+    });
+});
 
 // ===== SMOOTH SCROLLING =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href && href.startsWith('#')) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
     });
 });
@@ -104,16 +99,14 @@ const nav = document.querySelector('.nav-hud');
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
-    if (nav) {
-        if (currentScroll <= 0) {
-            nav.style.transform = 'translateY(0)';
-        } else if (currentScroll > lastScroll && currentScroll > 100) {
-            // Scrolling down
-            nav.style.transform = 'translateY(-100%)';
-        } else {
-            // Scrolling up
-            nav.style.transform = 'translateY(0)';
-        }
+    if (currentScroll <= 0) {
+        nav.style.transform = 'translateY(0)';
+    } else if (currentScroll > lastScroll && currentScroll > 100) {
+        // Scrolling down
+        nav.style.transform = 'translateY(-100%)';
+    } else {
+        // Scrolling up
+        nav.style.transform = 'translateY(0)';
     }
     
     lastScroll = currentScroll;
@@ -128,6 +121,7 @@ window.addEventListener('scroll', () => {
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
@@ -140,33 +134,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-// ===== SCROLL PROGRESS & BACK TO TOP =====
-const progressBar = document.getElementById('scroll-progress');
-const backToTop = document.getElementById('back-to-top');
-
-const updateProgress = () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrolled = Math.min((scrollTop / docHeight) * 100, 100);
-    if (progressBar) {
-        progressBar.style.width = `${scrolled}%`;
-    }
-    if (backToTop) {
-        backToTop.style.opacity = scrollTop > 400 ? '1' : '0';
-        backToTop.style.pointerEvents = scrollTop > 400 ? 'auto' : 'none';
-    }
-};
-
-window.addEventListener('scroll', updateProgress);
-window.addEventListener('resize', updateProgress);
-updateProgress();
-
-if (backToTop) {
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-}
 
 // ===== FORM SUBMISSION =====
 // Form is handled by Netlify Forms (method="POST", data-netlify="true")
@@ -354,6 +321,3 @@ document.addEventListener('keydown', (e) => {
         }
     }
 });
-
-// Mark as a module so TypeScript can import this browser-only interaction file.
-export {}
